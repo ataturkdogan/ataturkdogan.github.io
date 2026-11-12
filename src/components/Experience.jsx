@@ -38,8 +38,8 @@ const community = [
   },
   {
     company: 'Huawei Student Developers TEDU',
-    badge: 'General Coordinator',
-    role: 'Huawei Student Developer Club — General Coordinator',
+    badge: 'Campus Ambassador',
+    role: 'Huawei Student Developer Club — Campus Ambassador',
     desc: 'As General Coordinator of the Huawei Student Developer Club at TED University, I organized various events and actively contributed to the Huawei ecosystem, helping grow the student developer community.',
     logo: '/assets/logos/hsd.png', bg: '#fff',
   },
@@ -135,7 +135,7 @@ export default function Experience() {
         </div>
       </div>
 
-      <div ref={commRef}>
+      <div ref={commRef} className="mt-8">
         <p className="gbar relative z-10">Communities &amp; Clubs</p>
         <div className="grid gap-5" style={{ gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))' }}>
           {community.map(item => <Card key={item.company} {...item} type="community"/>)}
